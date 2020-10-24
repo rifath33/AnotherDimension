@@ -1,6 +1,5 @@
 public class ArrayOps{
 
-
   public static String arrToString(int[] arr){
 
     String addedArray = "";
@@ -40,20 +39,17 @@ public class ArrayOps{
 
     }
 
+  public static int[][] create2DArray(int rows, int cols, int maxValue){
+
+  /*
+  create2DArray(6,2,3) could return the 2D array:  (6 rows, 2 columns, values from 0-3)
+  {{2, 0}, {1, 3}, {2, 1}, {3, 2}, {2, 1}, {1, 0}}
+  */
+
+    int[][]x = new int[rows][cols];
+
+    return x;
+
+  }
+
 }
-
-
-// code that doesn't do what we want... ugh
-/*
-    for(int f = 0; f < arr.length; f++){
-
-      for(int i=0; i < arr[f].length; i++){
-
-        if( (i == arr[f].length - 1) && (f == arr.length - 1) )
-        result = result + arr[f][i];
-        else result = result + arr[f][i] + ", ";
-
-        }
-
-      }
-*/
