@@ -18,12 +18,7 @@ public class Tester{
     {{2, 0}, {1, 3}, {2, 1}, {3, 2}, {2, 1}, {1, 0}}
     */
 
-    System.out.println(ArrayOps.arrDeepToString(ArrayOps.create2DArray(6,2,3)));
-
-    // random num between 0 and 5 exclusive
-
-    double lol = Math.random()*5;
-    System.out.println((int)(Math.round( lol * 10.0) / 10));
+    System.out.println(ArrayOps.arrDeepToString(ArrayOps.create2DArrayRandomized(6,2,3)));
 
   }
 }
