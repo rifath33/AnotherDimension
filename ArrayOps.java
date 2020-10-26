@@ -89,7 +89,7 @@ public class ArrayOps{
   // (all rows have the same length) and returns a 1D array of int with each
   // element being the sum of the individual columns of the 2D array.
 
-  public static int[] sumCols(int[][] matrix) {
+  public static int[] sumCols(int[][] matrix){
     int[] result = new int[matrix[0].length];
     for(int i = 0; i<matrix[0].length; i++){
       result[i] = ArrayOps.sumOfAColumn(matrix, i);
@@ -97,5 +97,17 @@ public class ArrayOps{
     return result;
   }
 
+  // isRowMagic() takes a rectangular 2d array and returns true when each row
+  // has the same sum, and false otherwise.
+
+  public static boolean isRowMagic(int[][] matrix){
+    int workingNum = 0;
+    for(int i = 0; i+1<matrix.length; i++){
+      if(ArrayOps.sumRows(matrix)[i] == ArrayOps.sumRows(matrix)[i+1])
+      workingNum = 1;
+      else workingNum = 0;
+    }
+    return (workingNum ==1);
+  }
 
 }

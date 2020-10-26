@@ -7,12 +7,12 @@ public class Tester{
                    {  7, -2,  2,  1 },
                    { -5, -2,  2, -9 }
                };
-    int[]  B  =   {  1, 3, 5 };
+    int[][]  B  =  { {  1, 3, 5 },
+                    { 3,3,3 }
+                  };
 
     System.out.println(
-    Arrays.toString(
-    ArrayOps.sumCols(A)
-    )
+    ArrayOps.isRowMagic(B)
     );
 
   }
