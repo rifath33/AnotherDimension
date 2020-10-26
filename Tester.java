@@ -8,11 +8,11 @@ public class Tester{
                    { -5, -2,  2, -9 }
                };
     int[][]  B  =  { {  1, 3, 5 },
-                    { 3,3,3 }
+                      { 3,1,-1 }
                   };
 
     System.out.println(
-    ArrayOps.isRowMagic(B)
+    ArrayOps.isColMagic(B)
     );
 
   }
