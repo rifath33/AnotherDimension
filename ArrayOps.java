@@ -35,4 +35,23 @@ public class ArrayOps{
     return result;
   }
 
+  // sumRows() takes a 2D array of int, and returns a 1D array of int with
+  // each element being the sum of the individual rows of the 2D array.
+
+  public static int[] sumRows(int[][] matrix){
+
+    int[]result = new int[matrix.length];
+
+    for(int f = 0; f < matrix.length; f++){
+      int sumOfRowI = 0;
+      for(int i = 0; i < matrix[f].length; i++){
+        sumOfRowI = sumOfRowI + matrix[f][i];
+      }
+      result[f] = sumOfRowI;
+    }
+
+    return result;
+
+  }
+
 }
