@@ -11,9 +11,16 @@ public class Tester{
                       { 3,1,-1 }
                   };
 
-    System.out.println(
-    ArrayOps.isLocationMagic(A, 0, 0)
-    );
+    //System.out.println(
+    //ArrayOps.isLocationMagic(A, 0, 0)
+    //);
+
+    int[][]E = {
+    {  2,  4, 2 },
+    {  2, 2, 2 } };
+
+    System.out.println(ArrayOps.isLocationMagic(E, 0, 1)); // false 2 + 4 + 2  !=  4 + 2
+    System.out.println(ArrayOps.isLocationMagic(E, 1, 1)); // true  2 + 2 + 2 == 4 + 2
 
   }
 }
