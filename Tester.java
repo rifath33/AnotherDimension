@@ -8,7 +8,7 @@ public class Tester{
     System.out.println(
     Arrays.toString
     (
-    ArrayOps.sumRows(kutha)
+    ArrayOps.largestInRows(kutha)
     )
     );
 

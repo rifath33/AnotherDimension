@@ -39,9 +39,7 @@ public class ArrayOps{
   // each element being the sum of the individual rows of the 2D array.
 
   public static int[] sumRows(int[][] matrix){
-
     int[]result = new int[matrix.length];
-
     for(int f = 0; f < matrix.length; f++){
       int sumOfRowI = 0;
       for(int i = 0; i < matrix[f].length; i++){
@@ -49,9 +47,19 @@ public class ArrayOps{
       }
       result[f] = sumOfRowI;
     }
-
     return result;
+  }
 
+  // largestInRows() takes a nonempty 2D array of int, the inner arrays cannot
+  // be empty either, and returns a 1D array of int with each element being the
+  // largest element of the individual rows  of the 2D array.
+
+  public static int[] largestInRows(int[][] matrix){
+    int [] result = new int[matrix.length];
+    for(int m = 0; m<matrix.length;m++){
+      result[m]=ArrayOps.largest(matrix[m]);
+    }
+    return result;
   }
 
 }
