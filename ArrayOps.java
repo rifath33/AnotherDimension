@@ -62,4 +62,15 @@ public class ArrayOps{
     return result;
   }
 
+  // sum() takes a 2D array of int, and returns the sum of all the
+  // individual values in all of the arrays.
+
+  public static int sum(int[][] arr) {
+    int result = 0;
+    for(int i = 0; i < arr.length; i++){
+      result = result + ArrayOps.sumRows(arr)[i];
+    }
+    return result;
+  }
+
 }
