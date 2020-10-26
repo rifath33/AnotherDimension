@@ -90,10 +90,10 @@ public class ArrayOps{
   // element being the sum of the individual columns of the 2D array.
 
   public static int[] sumCols(int[][] matrix) {
-    int[] result = new int[matrix.length];
-    //for(int i = 0; i<matrix.length; i++){
-      //  matrix[i] =
-    //  }
+    int[] result = new int[matrix[0].length];
+    for(int i = 0; i<matrix[0].length; i++){
+      result[i] = ArrayOps.sumOfAColumn(matrix, i);
+    }
     return result;
   }
 
