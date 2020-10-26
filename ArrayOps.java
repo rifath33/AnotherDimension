@@ -123,4 +123,16 @@ public class ArrayOps{
     return (workingNum ==1);
   }
 
+  // isLocationMagic() takes a rectangular 2d array and returns true when the
+  // row and column specified have the same sum. Assume that the row and col
+  // provided are in bounds of the array.
+
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int workingNum = 0;
+      if(ArrayOps.sumRows(matrix)[row] == ArrayOps.sumOfAColumn(matrix, col))
+      workingNum = 1;
+      else workingNum = 0;
+      return (workingNum == 1);
+  }
+
 }
